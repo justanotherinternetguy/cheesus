@@ -1,9 +1,10 @@
+import random
+
 path = "./bible.txt"
 out_path = "./out.txt"
 
 with open(path, 'r') as f:
     bible = f.read().split()
-
 
 print(bible)
 
@@ -14,8 +15,6 @@ for i in range(len(bible)):
     bible[i] += ' '
 
 print(bible)
-
-
 
 with open(out_path, 'a') as new_bible:
     new_bible.truncate(0);
